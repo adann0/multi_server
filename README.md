@@ -17,7 +17,7 @@ You can then run the Server :
 
 	$ python3 -m multi_server <port>
 
-You can access the webapp at **http://<ip>:<port>**.
+You can access the webapp at `http://<ip>:<port>`.
 
 You can download the files in the current folder from the command line, for example :
 
