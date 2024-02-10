@@ -1,0 +1,22 @@
+<html>   
+<head>   
+    <title>Upload</title>   
+</head>   
+<body>   
+
+    <b> * Upload * </b>
+
+    <form action = "/upload" method = "post" enctype="multipart/form-data">   
+        <input type="file" name="file" />   
+        <input type="submit" value="Upload">   
+    </form>
+
+    <b> * Download * </b>
+
+    <ul>
+    {% for file in files %}
+        <li><a href="{{ file }}">{{ file }}</a></li>
+    {% endfor %}
+    </ul>
+</body>   
+</html>
