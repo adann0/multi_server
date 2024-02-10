@@ -6,7 +6,7 @@ param (
    [Parameter(Mandatory=$true)][string]$file
 )
 
-$uri = "http://$ip:$port/upload"
+$uri = "http://${ip}:${port}/upload"
     
 # Création d'un boundary pour la requête multipart
 $boundary = [System.Guid]::NewGuid().ToString()
