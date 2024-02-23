@@ -6,24 +6,15 @@ Tested on : Python 3.9
 
 A simple server in Flask to download/upload files.
 
-	$ git clone https://github.com/adann0/multi_server.git
-	$ cd multi_server
-	$ python3 -m venv venv
-	$ source venv/bin/activate
-	$ pip install -r requirements.txt
-	$ pip install .
+## Binaries
 
-You can then run the Server :
+For example on Windows :
 
-	$ python3 -m multi_server <port>
+    PS > iwr -uri https://github.com/adann0/multi_server/releases/download/v0.0.1/multi_server.exe -outfile multi_server.exe
+ 
+Then you can run :
 
-You can also compile it with PyInstaller :
-
-	$ pyinstaller --add-data multi_server/templates:templates --name multi_server --onefile --clean multi_server/__main__.py
-
-In wich case, you can run it with :
-
-	$ ./dist/multi_server <port>
+    PS > .\multi_server.exe <port>
 
 You can access the webapp at `http://<ip>:<port>`.
 
@@ -41,6 +32,23 @@ Or with Powershell :
     PS > .\upload.ps1 -ip <ip> [-port <port>] -file <file_path> 
 
 The uploaded files are in **uploads/**.
+
+## Python Module
+
+	$ git clone https://github.com/adann0/multi_server.git
+	$ cd multi_server
+	$ python3 -m venv venv
+	$ source venv/bin/activate
+	$ pip install -r requirements.txt
+	$ pip install .
+
+You can then run the Server :
+
+	$ python3 -m multi_server <port>
+
+## PyInstaller
+
+	$ pyinstaller --add-data multi_server/templates:templates --name multi_server --onefile --clean multi_server/__main__.py
 
 ## Source
 
