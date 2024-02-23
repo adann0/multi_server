@@ -2,7 +2,7 @@
 
 **Warning : This app is designed to help during the OSCP to download/exfiltrate datas. Not to be run in production.**
 
-Tested on : Python 3.11
+Tested on : Python 3.9
 
 A simple server in Flask to download/upload files.
 
@@ -16,6 +16,14 @@ A simple server in Flask to download/upload files.
 You can then run the Server :
 
 	$ python3 -m multi_server <port>
+
+You can also compile it with PyInstaller :
+
+	$ pyinstaller --add-data multi_server/templates:templates --name multi_server --onefile --clean multi_server/__main__.py
+
+In wich case, you can run it with :
+
+	$ ./dist/multi_server <port>
 
 You can access the webapp at `http://<ip>:<port>`.
 

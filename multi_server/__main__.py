@@ -9,7 +9,6 @@ from flask import *
 
 app = Flask(__name__)
 
-
 @app.route('/')
 def index():
     files = [path for path in os.listdir(os.getcwd()) if os.path.isfile(os.path.join(os.getcwd(), path))]
@@ -34,7 +33,7 @@ if __name__ == '__main__':
         port = 80
     else:
         try :
-            port = int(sys.argv[1])
+            port = int(sys.argv[-1])
         except ValueError:
-            sys.exit("USAGE: python3 -m multi_server <port>")
+            sys.exit("Bad port.")
     app.run(host='0.0.0.0', port=port, debug=True)

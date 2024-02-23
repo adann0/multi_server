@@ -4,3 +4,5 @@ __pycache__
 uploads
 multi_server.egg-info
 build
+dist
+multi_server.spec
