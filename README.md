@@ -6,7 +6,9 @@ Tested on : Python 3.9
 
 A simple server in Flask to download/upload files.
 
-## Binaries
+## Setup
+
+### Binaries
 
 For example on Windows :
 
@@ -33,7 +35,7 @@ Or with Powershell :
 
 The uploaded files are in **uploads/**.
 
-## Python Module
+### Python Module
 
 	$ git clone https://github.com/adann0/multi_server.git
 	$ cd multi_server
@@ -46,7 +48,7 @@ You can then run the Server :
 
 	$ python3 -m multi_server <port>
 
-## PyInstaller
+## Recompile
 
 	$ pyinstaller --add-data multi_server/templates:templates --name multi_server --onefile --clean multi_server/__main__.py
 
